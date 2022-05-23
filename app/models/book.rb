@@ -4,7 +4,7 @@ class Book < ApplicationRecord
     enum sales_status: {
         accepting_reservation:  0,
         now_on_sale:            1,
-        end_of_pring:           2,
+        end_of_print:           2,
     }
 
     # 高額な本を指定したスコープ

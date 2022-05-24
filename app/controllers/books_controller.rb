@@ -24,11 +24,8 @@ class BooksController < ApplicationController
 =end
 
     def show
-    #   @book = Book.find(params[:id])  共通行なのでポア
-        respond_to do |format|
-            format.html
-            format.json
-        end
+        # シンボルでもよい
+        render :show
     end
 
     # destroyメソッドを追加する

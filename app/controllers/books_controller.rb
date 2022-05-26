@@ -24,8 +24,10 @@ class BooksController < ApplicationController
 =end
 
     def show
-        # シンボルでもよい
-        render :show
+        respond_to do |format|
+            format.html     #   略式記法
+            format.json { render json: @book }
+        end
     end
 
     # destroyメソッドを追加する
